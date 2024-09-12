@@ -1,0 +1,180 @@
+@media (max-width: 768px) {
+  .container {
+    padding: 5px 25px;
+  }
+
+  /* Responsive adjustments for navbar */
+  .navbar {
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .login-btn {
+    position: static;
+    padding-right: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .header {
+    background-image: none;
+    padding: 80px 0 20px 0;
+  }
+
+  .p1 {
+    font-size: 0.8rem;
+    max-width: 100%;
+  }
+
+  .service-icon {
+    width: 150px; /* Smaller width for smaller screens */
+    padding: 15px; /* Reduce padding */
+    font-size: 0.9rem; /* Adjust font size if needed */
+  }
+
+  .layanan-items {
+    width: 900px;
+  }
+
+  .layanan-item {
+    width: 100px; /* Width of individual items */
+  }
+
+  .layanan-khusus h2 {
+    font-size: 20px;
+  }
+
+  .penawaran-menarik,
+  .artikel-baru {
+    padding: 0;
+  }
+  .artikel-card h3 {
+    font-size: 11px;
+  }
+
+  .fot-con {
+    display: contents;
+    gap: 30px;
+    text-align: start;
+  }
+
+  .footer-download,
+  .footer-cta {
+    text-align: start;
+  }
+
+  .app-icons img {
+    width: 120px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .footer-links ul {
+    padding-bottom: 20px;
+  }
+
+  .footer-info h3 {
+    padding: 10px 0;
+  }
+  .footer-info {
+    padding: 10px 0;
+  }
+
+  .footer-social {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-social a img {
+    width: 20px;
+    height: 20px;
+    transition: opacity 0.3s ease;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+  }
+
+  .footer-bottom h3 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fot-logo img {
+    width: 200px;
+  }
+
+  .service-icon {
+    width: 120px; /* Even smaller width for very small screens */
+    padding: 10px; /* Further reduce padding */
+    font-size: 0.65rem; /* Adjust font size further if needed */
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .footer-social {
+    gap: 10px;
+  }
+
+  .footer-info {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .arrow span {
+    transform: rotate(90deg);
+  }
+
+  .fot-con {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .app-icons img {
+    width: 130px;
+  }
+
+  .cta-button {
+    font-size: 15px;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+  }
+
+  .footer-bottom h3 {
+    font-size: 12px;
+  }
+
+  .footer-social {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-info {
+    max-width: 600px;
+  }
+}
