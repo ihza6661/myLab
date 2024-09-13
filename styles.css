@@ -223,17 +223,23 @@ h3 {
 
 /* Ensure that the container can scroll horizontally if its content overflows */
 .layanan-items-container {
-  width: 100%; /* or a fixed width like 2000px if preferred */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow-y: hidden; /* Hide vertical overflow */
+  /* width: 2000px; */
+  /* width: fit-content; */
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  /* overflow-y: hidden; Hide vertical overflow */
   display: flex;
   justify-content: center;
   align-items: center;
+  border: solid red 2px;
 }
 
 .layanan-items {
   display: flex; /* Align items in a row */
   flex-wrap: nowrap; /* Prevent wrapping */
+  width: 100%; /* or a fixed width like 2000px if preferred */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical overflow */
+  align-items: center;
 }
 
 .layanan-item {
