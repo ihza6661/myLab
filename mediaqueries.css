@@ -42,8 +42,12 @@
     font-size: 0.9rem; /* Adjust font size if needed */
   }
 
+  .layanan-khusus {
+    padding: 5px 0 10px;
+  }
   .layanan-items {
     width: 900px;
+    padding: 0;
   }
 
   .layanan-item {
@@ -52,9 +56,11 @@
 
   .layanan-khusus h2 {
     font-size: 20px;
+    font-weight: bold;
   }
-
-  .penawaran-menarik,
+  .penawaran-menarik {
+    margin-bottom: 10px;
+  }
   .artikel-baru {
     padding: 0;
   }
@@ -176,5 +182,10 @@
 
   .footer-info {
     max-width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .promo-banner img {
+    border-radius: 10px;
   }
 }

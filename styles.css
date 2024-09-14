@@ -17,10 +17,16 @@ h3 {
   font-size: 22px;
 }
 
+h2 {
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
 .container {
   max-width: 100vw;
   overflow-x: hidden;
   padding: 0 100px;
+  z-index: 1;
 }
 
 /* Navbar styles */
@@ -221,6 +227,13 @@ h3 {
   transition: transform 0.3s ease;
 }
 
+/* .penawaran-menarik-h2 {
+  padding-bottom: 30px;
+} */
+.layanan-khusus {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
 /* Ensure that the container can scroll horizontally if its content overflows */
 .layanan-items-container {
   /* width: 2000px; */
@@ -230,7 +243,6 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid red 2px;
 }
 
 .layanan-items {
@@ -249,75 +261,77 @@ h3 {
 }
 
 .layanan-item img {
-  width: 100px;
   height: auto;
   margin-bottom: 10px;
   z-index: 1;
-}
-
-.layanan-item p {
-  font-size: 0.8rem; /* Adjusted font size for readability */
-}
-
-.layanan-khusus h2 {
-  text-align: start;
-  font-size: 1.5rem;
-  padding-top: 10px;
-}
-
-/* Penawaran menarik  */
-
-.penawaran-menarik,
-.artikel-baru,
-.obat-vitamin {
-  padding: 40px 0;
-}
-
-.penawaran-menarik h2,
-.artikel-baru h2,
-.obat-vitamin h2 {
-  text-align: start;
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-
-.obat-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.layanan-item img {
   width: 60px;
   height: 60px;
   margin: 20px;
   margin-bottom: 10px;
 }
-.obat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 10%;
-  background-color: #f0f0f0;
-  text-align: center;
+
+.layanan-item p {
+  font-size: 0.9rem; /* Adjusted font size for readability */
 }
 
-.promo-banner {
-  display: flex;
+/* Penawaran menarik  */
+
+.penawaran-menarik {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 80px;
 }
-.promo-banner img {
-  padding: 5px 12px;
-  width: 35%;
-  border-radius: 40px;
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+  width: 33.3333%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.artikel-baru {
+  padding-bottom: 40px;
 }
 
 .artikel-cards {
   display: flex;
   justify-content: space-between;
 }
-
+.artikel-cards h3 {
+  font-size: 14px;
+}
 .artikel-card {
   width: 23%;
   background-color: #fff;
@@ -424,6 +438,10 @@ footer {
 
 .footer-info {
   max-width: 400px;
+}
+
+.footer-info p {
+  padding-top: 10px;
 }
 .end-footer {
   background-color: #35406b;
