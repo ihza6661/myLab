@@ -148,7 +148,7 @@ h2 {
   justify-content: flex-start;
   margin-top: 20px;
   gap: 20px;
-  width: 100%; /* or a fixed width like 2000px if preferred */
+  width: 100%;
   overflow-x: auto; /* Enable horizontal scrolling */
   overflow-y: hidden; /* Hide vertical overflow */
   align-items: center;
@@ -227,19 +227,14 @@ h2 {
   transition: transform 0.3s ease;
 }
 
-/* .penawaran-menarik-h2 {
-  padding-bottom: 30px;
-} */
 .layanan-khusus {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+
 /* Ensure that the container can scroll horizontally if its content overflows */
 .layanan-items-container {
-  /* width: 2000px; */
-  /* width: fit-content; */
   overflow-x: scroll; /* Enable horizontal scrolling */
-  /* overflow-y: hidden; Hide vertical overflow */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,7 +285,8 @@ h2 {
 }
 
 .carousel-images img {
-  width: 33.3333%;
+  /* width: 33.3333%; */
+  width: 30%;
   height: auto;
   display: block;
   padding: 10px;
@@ -307,6 +303,7 @@ h2 {
   border: none;
   cursor: pointer;
   transform: translateY(-50%);
+  border-radius: 50%;
   font-size: 24px;
   line-height: 50px;
   text-align: center;

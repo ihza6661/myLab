@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextButton = document.querySelector(".carousel-button.next");
   const carouselImages = document.querySelector(".carousel-images");
   const images = Array.from(carouselImages.children);
-  const imageWidth = 100 / 4; // Width percentage for 3 images
+  const imageWidth = 100 / 3; // Width percentage for 3 images
   let index = 0;
 
   function updateCarousel() {
