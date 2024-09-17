@@ -69,7 +69,7 @@
   }
 
   .fot-con {
-    display: contents;
+    /* display: contents; */
     gap: 30px;
     text-align: start;
   }
@@ -117,6 +117,9 @@
   .footer-bottom h3 {
     font-size: 10px;
   }
+  .carousel-button {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -157,10 +160,6 @@
   .fot-con {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .app-icons img {
-    width: 130px;
   }
 
   .cta-button {

@@ -346,6 +346,7 @@ h2 {
 footer {
   background-color: #46568e;
   color: #fff;
+  min-height: fit-content;
 }
 
 .fot-logo {
